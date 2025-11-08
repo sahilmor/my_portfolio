@@ -1,9 +1,9 @@
-Sahil Mor's Personal Portfolio
+****Sahil Mor's Personal Portfolio****
 This is the official source code for my personal portfolio website, built to showcase my skills, projects, and professional experience.
 
 The site is built with Astro for high performance and styled with Tailwind CSS.
 
-✨ Features
+**✨ Features**
 Hero Section: A concise introduction with links to my LinkedIn, GitHub, and resume.
 
 About Me: A detailed section outlining my technical skills (Frontend, Backend, Core Concepts & Tools).
@@ -14,7 +14,7 @@ Featured Projects: A dynamic, card-based layout showcasing my key projects with 
 
 Fully Responsive: Designed to look great on all devices, from mobile phones to desktops.
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 Framework: Astro
 
 UI Library: React (used for interactive components, as listed in package.json)
@@ -25,7 +25,7 @@ Content: Project and experience data is managed centrally in src/config/index.ts
 
 Deployment: Ready to deploy on platforms like Vercel or Netlify.
 
-🏁 Getting Started
+**🏁 Getting Started**
 To get a local copy up and running, follow these simple steps.
 
 Prerequisites
