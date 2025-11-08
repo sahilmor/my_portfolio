@@ -1,10 +1,10 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Sahil Mor - Full Stack Developer",
+  author: "Sahil Mor",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer based in Gohana, Haryana. I specialize in UI design, full stack web application development and maintenance.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
   navLinks: [
@@ -13,85 +13,93 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "Twitter", href: "https://x.com/sahilmor05" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/sahilmor/" },
+    { text: "Github", href: "https://github.com/sahilmor" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/pfp.png",
+  canonicalURL: "https://sahilmor.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Sahil Mor",
+    specialty: "Full-Stack Developer | MERN Stack & Next.js",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Final-year Computer Science student specializing in building high-performance web applications. I have hands-on experience developing scalable dashboards for 5,000+ clients and a passion for creating seamless, responsive user experiences.",
+    email: "mor.sahil05.28@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Pronnel",
+      position: "Member of Technical Staff - Intern",
+      startDate: "June 2025",
+      endDate: "Sep 2025",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Forged front-end architecture for a new customer dashboard using Angular.js and Bootstrap, leading to a 20% faster page load time for 5,000+ clients.",
+        "Assisted in designing and building APIs using Angular's HTTP Client Module.",
+        "Participated in code reviews, debugging sessions, and daily stand-ups, aligning with agile development practices.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Geeta Technical Hub",
+      position: "Web Intern",
+      startDate: "Feb 2025",
+      endDate: "May 2025",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Helped in developing and managing the official college website using Next.js and Tailwind CSS.",
+        "Resolved daily bugs and client-side issues to ensure a smooth flow for web pages.",
+        "Worked with Git and GitHub for version control and resolved client issues based on weekly reports.",
       ],
     },
     {
-      company: "Driveer",
+      company: "NAAI India",
       position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      startDate: "Oct 2024",
+      endDate: "Jan 2025",
+      summary: [
+        "Developed and helped in building POS system.",
+        "Learned new state management and debug skills by experts",
+        "Worked with next js to provide a faster and smooth bugs free experince to the users",
+      ]
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Trello-lite: Real-Time Kanban Board",
+      summary: "Full-stack collaborative project management tool with the MERN stack. Features real-time updates using Socket.IO, drag-and-drop, and JWT authentication.",
+      linkPreview: "#",
+      linkSource: "https://github.com/sahilmor",
+      image: "/tt.jpeg",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "NHCC Website",
+      summary: "Developed a responsive portfolio website for New Hindustan Construction Co. Optimized mobile usability and conversion rates by implementing fluid layouts and resolving critical UI issues.",
+      linkPreview: "#",
+      linkSource: "https://github.com/sahilmor",
+      image: "/nhcc.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "Prime tv",
+      summary: "Full-stack movie streaming platform using the MERN stack. Implemented protected routes with JWT and integrated external open APIs to stream movie and show data.",
+      linkPreview: "#",
+      linkSource: "https://github.com/sahilmor",
+      image: "/pt.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      I'm a B.Tech Computer Science student at Geeta University, graduating in 2026. 
+    My journey in tech has been driven by a passion for building, which led 
+    me to become the CTO of my college's coding society.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      I have a strong foundation in Data Structures, Algorithms, and core CS 
+    fundamentals like OOPS and DBMS. I thrive in agile environments, 
+    participating in daily stand-ups and code reviews, and I'm eager 
+    to bring my skills in both frontend and backend development to a 
+    challenging full-time role.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/pfp.png",
   },
 };
 

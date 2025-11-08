@@ -23,4 +23,50 @@ const { description, image, name } = Astro.props;
       />
     </div>
   </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+    <article class="flex flex-col gap-2">
+      <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+        Frontend
+      </h3>
+      <ul class="flex flex-wrap gap-2">
+        {
+          ["React", "Next.js", "Angular", "Tailwind CSS", "Bootstrap", "JavaScript", "TypeScript"].map((skill) => (
+            <li class="py-1 px-3 bg-gray-200 dark:bg-gray-700 rounded-md text-sm text-gray-800 dark:text-gray-200">
+              {skill}
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <article class="flex flex-col gap-2">
+      <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+        Backend
+      </h3>
+      <ul class="flex flex-wrap gap-2">
+        {
+          ["Node.js", "Express.js", "MongoDB", "MySQL", "Supabase", "JWT"].map((skill) => (
+            <li class="py-1 px-3 bg-gray-200 dark:bg-gray-700 rounded-md text-sm text-gray-800 dark:text-gray-200">
+              {skill}
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <article class="flex flex-col gap-2">
+      <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+        Core Concepts & Tools
+      </h3>
+      <ul class="flex flex-wrap gap-2">
+        {
+          ["C", "C++", "DSA", "OOPS", "DBMS", "Git", "GitHub", "Postman", "Linux"].map((skill) => (
+            <li class="py-1 px-3 bg-gray-200 dark:bg-gray-700 rounded-md text-sm text-gray-800 dark:text-gray-200">
+              {skill}
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+  </div>
 </Section>
