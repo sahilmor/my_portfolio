@@ -66,6 +66,13 @@ export const SITE_CONTENT: SiteContent = {
   ],
   projects: [
     {
+      "name": "NomadX: AI-Powered Travel Planner (Gen-Z Focus)",
+      "summary": "A full-stack, collaborative travel planning application built for budget adventurers. It features AI-powered trip generation,customized plans including optimal routes, accommodation, food, and over 30% off-beat locations.",
+      "linkPreview": "https://x-nomad.vercel.app",
+      "linkSource": "https://github.com/sahilmor/NomadX",
+      "image": "/nx.png"
+    },
+        {
       name: "Trello-lite: Real-Time Kanban Board",
       summary: "Full-stack collaborative project management tool with the MERN stack. Features real-time updates using Socket.IO, drag-and-drop, and JWT authentication.",
       linkPreview: "#",
@@ -75,15 +82,15 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "NHCC Website",
       summary: "Developed a responsive portfolio website for New Hindustan Construction Co. Optimized mobile usability and conversion rates by implementing fluid layouts and resolving critical UI issues.",
-      linkPreview: "#",
-      linkSource: "https://github.com/sahilmor",
+      linkPreview: "https://www.nhccworld.com",
+      linkSource: "https://github.com/sahilmor/nhcc",
       image: "/nhcc.png",
     },
     {
       name: "Prime tv",
       summary: "Full-stack movie streaming platform using the MERN stack. Implemented protected routes with JWT and integrated external open APIs to stream movie and show data.",
-      linkPreview: "#",
-      linkSource: "https://github.com/sahilmor",
+      linkPreview: "https://prime-tv-two.vercel.app",
+      linkSource: "https://github.com/sahilmor/Prime.tv",
       image: "/pt.png",
     },
   ],
