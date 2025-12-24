@@ -13,6 +13,7 @@ export interface SiteContent {
   experience: ExperienceProps[];
   projects: ProjectProps[];
   about: AboutProps;
+  services: ServiceProps[];
 }
 
 export interface HeroProps {
@@ -47,3 +48,10 @@ export interface HeaderProps {
   siteLogo: string;
   navLinks: { text: string; href: string }[];
 }
+
+export interface ServiceProps {
+  title: string;
+  description: string;
+  image: string;
+}
+

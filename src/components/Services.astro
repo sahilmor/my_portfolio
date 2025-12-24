@@ -1,0 +1,64 @@
+---
+import Section from "./Section.astro";
+import type { ServiceProps } from "@types";
+
+interface Props {
+  services: ServiceProps[];
+}
+
+const { services } = Astro.props;
+---
+
+<Section text="Services" href="services">
+  <div class="grid gap-8 lg:grid-cols-2">
+    {
+      services.map(({ title, description, image }, index) => (
+        <div class="group relative overflow-hidden rounded-4xl border border-neutral/10 bg-black transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/5">
+          
+          {/* Subtle Index Number Background */}
+          <span class="absolute top-4 right-6 font-serif text-8xl font-bold text-white/5 opacity-50 transition-all duration-500 group-hover:text-primary/10 group-hover:opacity-100 z-0">
+            {index + 1}
+          </span>
+
+          {/* Image Area with Gradient Mask */}
+          <div class="relative h-72 w-full overflow-hidden">
+            <div class="absolute inset-0 z-10 bg-linear-to-b from-transparent via-black/50 to-black"></div>
+            <img 
+              src={image} 
+              alt={title} 
+              class="h-full w-full object-cover opacity-80 transition-transform duration-700 will-change-transform group-hover:scale-105 group-hover:opacity-100" 
+            />
+          </div>
+
+          {/* Content Area */}
+          <div class="relative z-20 -mt-20 px-8 pb-10">
+            {/* Title */}
+            <h3 class="mb-4 font-serif text-3xl font-semibold leading-tight text-white transition-colors group-hover:text-primary">
+              {title}
+            </h3>
+            
+            {/* Description */}
+            <p class="mb-8 text-lg leading-relaxed text-neutral transition-colors group-hover:text-white/80">
+              {description}
+            </p>
+
+            {/* Interactive 'Read More' Link */}
+            <div class="flex items-center gap-2 text-sm font-medium text-white/50 transition-colors group-hover:text-white">
+              <span class="uppercase tracking-widest">Explore</span>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="2" 
+                stroke="currentColor" 
+                class="h-4 w-4 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>

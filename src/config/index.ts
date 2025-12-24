@@ -6,11 +6,12 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "Software Engineer based in Gohana, Haryana. I specialize in UI design, full stack web application development and maintenance.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/pfp.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
+    { text: "Services", href: "/services" },
   ],
   socialLinks: [
     { text: "Twitter", href: "https://x.com/sahilmor05" },
@@ -108,6 +109,26 @@ export const SITE_CONTENT: SiteContent = {
     `,
     image: "/pfp.png",
   },
+  services: [
+    {
+      title: "Web Application Development",
+      description: "Building scalable, high-performance web applications using modern stacks like MERN and Next.js. I focus on creating responsive and intuitive user experiences.",
+      image: "/wd.png", 
+    },
+    {
+      title: "UI/UX Implementation",
+      description: "Translating complex design requirements into pixel-perfect, interactive interfaces. I ensure cross-browser compatibility and mobile responsiveness.",
+      image: "/ud.png", 
+    },
+    {
+      title: "API Design & Integration",
+      description: "Developing robust RESTful APIs and integrating third-party services. I focus on security, data validation, and efficient data handling.",
+      image: "/ad.png", 
+    },
+    {
+      title: "Website Optimization",
+      description: "Auditing and improving website performance, SEO, and accessibility to ensure your site loads fast and reaches the widest possible audience.",
+      image: "/wo.png", 
+    },
+  ],
 };
-
-// #5755ff
